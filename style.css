@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    font-size: 0.9375rem;
+    color: hsl(217, 12%, 63%);
+}
+
+.card {
+    max-width: 375px;
+    padding: 2em;
+    border-radius: 16px;
+    background-blend-mode: multiply;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: hsl(213, 19%, 18%);
+}
+
+.star-icon {
+    background-color: hsl(213, 19%, 22%);
+    padding: 1.1em;
+    border-radius: 50%;
+    margin: 0;
+}
+
+/* ==============================
+          TYPOGRAPHY 
+===============================*/
+
+h1 {
+    color: white;
+    font-weight: bolder;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+.body-text {
+    line-height: 1.5em;
+    margin-bottom: 1.8em;
+}
+
+/* ==============================
+          RATINGS
+===============================*/
+
+.ratings-div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.rating {
+    background-color: hsl(213, 19%, 22%);
+    width: 50%;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.rating:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+/* ==============================
+          Button
+===============================*/
+
+button {
+    background-color: hsl(25, 97%, 53%);
+    font-family: inherit;
+    color: white;
+    padding: 1.1em;
+    width: 100%;
+    border: 0;
+    border-radius: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+button:focus,
+button:active {
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+.selected {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+/* ==============================
+        THANJK YOU PAGE
+===============================*/
+
+.thank-you-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.selection-text {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 22%);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5em 0.9em;
+    border-radius: 25px;
+    margin-bottom: 2em;
+    letter-spacing: 0.05em;
+}
+
+.thank-title {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 1.7rem;
+}
+
+.thank-msg {
+    text-align: center;
+    line-height: 1.5em;
+}
+
+/* ==========================
+        MEDIA QUERY
+=========================== */
+
+@media (min-width: 400px) {
+    body {
+        height: 100vh;
+    }
+}
